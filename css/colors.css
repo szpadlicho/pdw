@@ -1,0 +1,337 @@
+html{
+    --tr: transparent;
+    --wh: rgb(251,251,251);
+    --bl: black;
+    ##--li: rgb(147,53,54);
+    ##--li: rgb(212,187,154);
+    --li: rgb(86,128,108);
+    --li2: rgb(103,153,129);
+    --lit: rgba(103,153,129,0.5);
+    ##--da: rgb(103,38,32);
+    ##--da: rgb(199,167,124);
+    --da: rgb(67,100,84);
+    --da2: rgb(53,79,66);
+    --dat: rgba(67,100,84,0.7);
+    --no: none;
+    --b2: rgba(0,0,0,0.5);
+    --t1: 5px 0px 7px rgba(0, 0, 0, 1);
+    --tt: 3px 0px 2px rgba(150, 150, 150, 1);
+    --dd: #555454;
+    --br: 5px;
+}
+body {
+    color: var(--wh) !important;
+    background-color: var(--bl) !important;
+
+}
+/*background*/
+.columns-container {
+    background-color: var(--no) !important;
+}
+.header-container {
+    background: var(--no) !important;
+}
+/* header */
+header {
+    background-color: var(--da) !important;
+}
+header .nav {
+    background: var(--da) !important;
+}
+/*topmenu*/
+.sf-menu{
+    background-color: var(--tr) !important;
+    border-bottom: 3px solid var(--li) !important;
+}
+.sf-menu > li {
+    border-right: 0px solid var(--li) !important;
+}
+.sf-menu > li > a {
+    border-bottom: 3px solid var(--li) !important;
+    color: var(--wh) !important;
+}
+.sf-menu > li.sfHover > a,
+.sf-menu > li > a:hover,
+.sf-menu > li.sfHoverForce > a,
+.sf-menu > li > a:active,
+.sf-menu > li > a:hover {
+    background-color: var(--li) !important;
+    border-bottom-color: var(--da) !important;
+}
+/*Menu top smartphone*/
+.cat-title {
+    color: var(--wh) !important;
+    border-bottom: var(--li) !important;
+    background-color: var(--da) !important;
+}
+.cat-title:hover {
+    background-color: var(--li) !important;
+    border-bottom-color: var(--da) !important;
+}
+.stickUpTop{
+   #background-color: var(--b2) !important;
+}
+.isStuck {
+    background-color: var(--da) !important;
+}
+/*sub menu*/
+.submenu-container{
+    background-color: var(--da) !important;
+}
+.sf-menu > li > ul > li > a {
+    color: var(--wh) !important;
+}
+/* basket*/
+.shopping_cart > a:first-child {
+    background: var(--da)0 !important;
+    color: var(--wh) !important;
+}
+#header .shopping_cart > a:first-child::after {
+    color: var(--li) !important;
+}
+.cart_block .cart-info .quantity-formated {
+    color: var(--wh) !important;
+}
+#header .cart_block {
+    background: var(--da) !important;
+    color: var(--wh) !important;
+}
+#header .cart_block .cart-prices {
+    background-color: var(--da) !important;
+}
+.cart_block .cart-prices .cart-prices-line {
+    border-bottom: 1px solid  var(--li) !important;
+}
+#header .cart_block .cart-buttons {
+    background-color: var(--da) !important;
+}
+.layer_cart_cart {
+    color: var(--da) !important;
+}
+.button-minus,
+.button-plus{
+    color: var(--da) !important;
+}
+/* orders */
+tbody{
+    background-color: var(--wh) !important;
+    color: var(--da) !important;
+}
+tbody li,
+tbody a{
+    color: var(--da) !important;
+}
+.page-heading{
+    color: var(--wh) !important;
+}
+#ordermsg label,
+.address_delivery label,
+.checkbox label {
+    color: var(--wh) !important;
+}
+.order_delivery .box{
+    color: var(--da) !important;
+}
+#ordermsg{
+    color: var(--wh) !important;
+}
+label[for=cgv],
+#address_invoice,
+#address_delivery{
+    color: var(--da) !important;
+}
+.payment_module {
+    background-color: var(--wh) !important;
+}
+p.payment_module a {
+    color: var(--da) !important; 
+}
+.price{
+    #color: var(--wh) !important; /* when order chceck last page*/
+}
+/*my account*/
+.info-title,
+.addresses .dark{
+    color: var(--wh) !important;
+}
+.bloc_adresses,
+.myaccount-link-list a {
+    color: var(--da) !important; 
+}
+.myaccount-link-list a:hover,
+.link-button:hover {
+    color: var(--li) !important;
+}
+.info-title,
+label[for=optin],
+label[for=newsletter] {
+    color: var(--da) !important; 
+}
+#left_column .title_block a {
+    color: var(--da) !important;
+}
+/* User info */
+.header_user_info {
+    float: right;
+    border-left: 0px solid var(--li) !important;
+    border-right: 0px solid var(--li) !important;
+}
+.header_user_info a:hover, .header_user_info a.active {
+    background: var(--li) !important;
+}
+/*slider*/
+.bx-prev,
+.bx-next {
+    border: 2px solid  var(--da) !important;
+}
+.bx-prev:after,
+.bx-next:after {
+    color: var(--da) !important;
+}
+.bx-prev:hover:before,
+.bx-next:hover:before {
+    background-color: var(--li) !important;
+}
+/*after slider*/
+#cmsinfo_block{
+    background-color: none!important;
+}
+/*parallax*/
+a {
+    color: var(--wh) !important;
+}
+a:hover, a:focus {
+    color: var(--wh) !important;
+}
+.content-bgnd {
+    background-color: var(--wh) !important;
+    color: var(--da) !important;
+}
+.tittle-bgnd{
+    text-shadow: var(--t1);
+}
+.tittle2-bgnd{
+    color: var(--wh) !important;
+    text-shadow: var(--t1);
+}
+/*product page*/
+.page-product-box {
+    background-color: var(--dat) !important;
+}
+/*category page*/
+.content_sortPagiBar .sortPagiBar {
+    border-bottom: 1px solid var(--li) !important;
+    background-color: var(--dat) !important;
+}
+.content_sortPagiBar .display-title,
+.heading-counter,
+.content_price .product-price,
+label[for=selectProductSort]{
+    color: var(--wh) !important;
+}
+.content_sortPagiBar .display li.selected i, 
+.content_sortPagiBar .display_m li.selected i {
+    color: var(--da) !important;
+}
+
+.lnk_view,
+ul.product_list .product-image-container .quick-view {
+    color: var(--da) !important;
+}
+ul.product_list.grid > li .product-container {
+    background-color: var(--dat) !important;
+}
+.lnk_view:hover,
+.product-name:hover {
+    color: var(--li) !important;
+}
+.content_sortPagiBar .display li a:hover i, 
+.content_sortPagiBar .display_m li a:hover i {
+    color: var(--li) !important;
+}
+#product-top-hr{
+    background: none !important;
+}
+ul.product_list.grid > li .product-container .product-image-container {
+    border: 1px solid var(--li) !important;
+}
+ul.product_list.grid > li .product-container .product-image-container .content_price {
+    background-image: none !important;
+    background-color: var(--lit) !important;
+}
+/*product description*/
+.box-info-product {
+    background-color: var(--dat) !important;   
+}
+#our_price_display,
+.our_price_display {
+    color: var(--wh) !important;
+}
+#quantity_wanted_p label,
+.product-heading-h5 {
+    color: var(--wh) !important;
+}
+/*Order steps*/
+#layer_cart_product_quantity,
+#layer_cart_product_price,
+#openLoginFormBlock,
+label[for='invoice_address'],
+.order_carrier_content div p
+{
+    color: var(--da) !important;
+}
+.step-num span
+{
+    color: var(--wh) !important;
+}
+form p span#amount_1.price {
+    color: var(--wh) !important;
+}
+/*order one step background*/
+/*
+#order-detail-content table{
+    background-color: var(--dat) !important;
+}
+#order-detail-content table *{
+    color: var(--wh) !important;
+}
+#order-detail-content tbody,
+#order-detail-content thead,
+#order-detail-content thead tr th,
+#order-detail-content tfoot,
+#order-detail-content tfoot tr,
+#order-detail-content #cart_summary tfoot td#total_price_container
+{
+    background: none !important;
+}
+*/
+/*hide or disable*/
+#quantity_wanted,
+.product_quantity_down,
+.product_quantity_up,
+.cart_quantity_input,
+.cart_quantity_down,
+.cart_quantity_up
+{
+    pointer-events: none;
+    cursor: default;
+}
+
+/*footer*/
+.footer-container {
+    background: var(--da) !important;
+    
+}
+.footer-contact {
+    color: var(--wh) !important;
+}
+/*
+@font-face {
+    font-family: 'Ubuntu Condensed';
+    src: url(../fonts/ubuntu/Ubuntu-R.ttf);
+}
+*/
+/*
+#672620
+#933536 
+*/
