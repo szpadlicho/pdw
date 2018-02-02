@@ -1,0 +1,2 @@
+# pdw
+Program doboru wzmacniaczy
