@@ -10,6 +10,7 @@ define('DB_SCHEMA', 'information_schema');
 define('ORDER', 'DESC');
 define('DEFAULT_ON', 20);
 define('INTERVAL', '1 MONTH');
+define('_DB_PREFIX_', 'ne_');
 
 // define('DB_HOST', 'sql.deoc.nazwa.pl');
 // define('DB_PORT', '3306');
