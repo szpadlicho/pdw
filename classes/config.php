@@ -1,10 +1,10 @@
 <?php
 define('DB_HOST', 'sql.big5.nazwa.pl');
 define('DB_PORT', '');
-define('DB_NAME', 'big5_pda');
+define('DB_NAME', 'big5_pdw');
 define('DB_CHARSET', 'utf8');
-define('DB_USER', 'big5_pda');
-define('DB_PASSWORD', 'PDA_Big5');
+define('DB_USER', 'big5_pdw');
+define('DB_PASSWORD', 'PDW_Big5');
 define('DB_ENCODING', 'utf8');
 define('DB_SCHEMA', 'information_schema');
 define('ORDER', 'DESC');

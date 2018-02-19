@@ -209,46 +209,56 @@ class InstallDataBase extends ConnectDataBase
     }
 }
 /**
-/*  SHOW
+/*  SHOW - amplifier selection program
 **/
 $obj_show = new InstallDataBase;
-//$obj_show->__setTable('anteny');
+//$obj_show->__setTable('amplifiers');
 //$obj_show->show();
 /**
 * Data Base created 
 **/
 $obj_install = new InstallDataBase;
 if (isset($_POST['connect'])) {
-	$obj_install->__setTable('anteny');
+	$obj_install->__setTable('amplifiers');
     $obj_install->show();
 }
 if (isset($_POST['del'])) {
-	$obj_install->deleteTb('anteny');
+	$obj_install->deleteTb('amplifiers');
 }
 if (isset($_POST['crt'])) {
     //$obj_install->createDb();
     $return = array();// array initiate
-    $obj_install->__setTable('anteny');
+    $obj_install->__setTable('amplifiers');
     $data = date('Y-m-d H:i:s');
     $arr_row = array(
-        'a_name'                    =>'TEXT',
+        'id_shop'                   =>'INTEGER(10)',
+        'name'                      =>'TEXT',
+        'model'                     =>'VARCHAR(100)',
+        'link'                      =>'VARCHAR(500)',
+        'cat'                       =>'VARCHAR(500)',
+        'output'                    =>'VARCHAR(10)',
+        'band'                      =>'VARCHAR(100)', /*GSM=2 EGSM=3 UMTS=4 DCS=5*//*pasmo*/
+        'in_range'                  =>'VARCHAR(100)', /*50m=2 100m=3 300m=4 300m<=5*//*zasięg in*/
+        'out_range'                 =>'VARCHAR(100)', /*0-1km=2 1-2km=3 2-5km=4 5-20km=5*//*zasięg out*/
         'add_data'                  =>'DATETIME',
         'update_data'               =>'DATETIME',
-        'show_data'                 =>'DATETIME',
-        'tag'                       =>'TEXT',
-        'author'                    =>'VARCHAR(200)', 
-        'a_visibility'              =>'INTEGER(1) UNSIGNED'
+        'visibility'                =>'INTEGER(1) UNSIGNED'
         );
     $arr_val = array(
-        'a_name'                    =>'ANTENA_NAME',
+        'id_shop'                   =>111,
+        'name'                      =>'WZMACNIACZ_NAME',
+        'model'                     =>'DC-2000',
+        'link'                      =>'https://new-electric.pl/pl/68-wzmacniacze',
+        'cat'                       =>'https://new-electric.pl/pl/68-wzmacniacze',
+        'output'                    =>'N', 
+        'band'                      =>'2,3,4,5', 
+        'in_range'                  =>'2', 
+        'out_range'                 =>'2', 
         'add_data'                  =>$data, 
         'update_data'               =>$data, 
-        'show_data'                 =>$data, 
-        'tag'                       =>'TAGGGG', 
-        'author'                    =>'MEEEEE', 
-        'a_visibility'              =>'1'    
+        'visibility'                =>'1'    
         );
-    $return['anteny'] = $obj_install->createTbDynamicRow($arr_row, $arr_val);
+    $return['amplifiers'] = $obj_install->createTbDynamicRow($arr_row, $arr_val);
     
     // $obj_install->__setTable('category');
     // $arr_row = array(
