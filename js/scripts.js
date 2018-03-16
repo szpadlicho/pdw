@@ -265,7 +265,7 @@ $(function(){
                                     +'<br /><span>lub telefonicznie: 508 964 552</span>'
                                     +'<br /><span id="processing">Przetwarzam<span id="dots"></span></span><span id="processing_done">...gotowe!</span>'
                                     +'<br />'
-                                    +'<br /><a id="q7d" class="answer a7">Pokaż ponownie wynik</a> lub <a id="q7d" class="answer a8">rozpocznij od nowa</a>'
+                                    +'<br /><span class="pdw-show-again"><a id="q7d" class="answer a7">Pokaż ponownie wynik</a></span> lub <span class="pdw-do-again"><a id="q7d" class="answer a8">rozpocznij od nowa.</a></span>'
                                     +'</p>'
                                     );
         $( '.question' ).delay(0).fadeIn( 'fast', function() {

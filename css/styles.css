@@ -229,3 +229,18 @@ a.a1 {
     font-weight: bold;
     color: black;
 }
+.pdw-do-again a,
+.pdw-show-again a {
+    #transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+.pdw-show-again a:hover{
+    color: var(--bl) !important;
+    text-decoration: underline !important;
+}
+.pdw-do-again a:hover{
+    color: var(--bl) !important;
+    text-decoration: underline !important;
+}
