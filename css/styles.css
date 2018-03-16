@@ -110,10 +110,18 @@ a.a1 {
     color: var(--k0);
 }
 #result_close{
-    /* position: fixed;
+    position: fixed;
     top: 5vh;
     right: 10vw;
-    color: white; */
+    color: white;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 8008;
+    
+}
+.result_close{
     position: absolute;
     top: -2em;
     right: -2em;

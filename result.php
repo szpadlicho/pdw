@@ -184,7 +184,15 @@ $get = AmplifiersClass::getProductsAm($id_lang=1, $start=0, $limit=0, $order_by=
 
 if ($get) {
     ?>
-    <div id="chat_display_result_beafore" class="columns-container col-xs-12 col-sm-12"><span id="result_close">X</span></div>
+    <script>
+        $(function() {
+            $( '.result_close' ).on( 'click', function() {
+                //display_result_hide();
+                $( '#chat_display_result_placeholder' ).hide();
+            });
+        });
+    </script>
+    <div id="chat_display_result_beafore" class="columns-container col-xs-12 col-sm-12"><span class="result_close">X</span></div>
 	<ul class="product_list product-list">
     <?php
     foreach ($get as $result) {
@@ -270,6 +278,15 @@ if ($get) {
     }
 } else {
     ?>
+    <script>
+        $(function() {
+            $( '.result_close' ).on( 'click', function() {
+                //display_result_hide();
+                $( '#chat_display_result_placeholder' ).hide();
+            });
+        });
+    </script>
+    <div id="chat_display_result_beafore" class="columns-container col-xs-12 col-sm-12"><span class="result_close">X</span></div>
     <div id="pd-sorry">
         <p id="" class="">Przykro nam, że nie znaleźliśmy gotowego zestawu spełniającego Twoje kryteria, ale nie martw się skomponujemy go indywidualnie dla Ciebie.</p>
         <p id="" class="">Zapraszamy do kontaktu z naszym ekspertem.</p>
